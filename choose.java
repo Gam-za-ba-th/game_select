@@ -67,7 +67,7 @@ public class choose extends JFrame
     {  	
 		crossImage = new ImageIcon("button_icon/crossword.png");
 		crossButton = new JButton("cross-word", crossImage);
-		crossButton.setFont(new Font ("ê³ ë”•",Font.BOLD,20));
+		crossButton.setFont(new Font ("°íµñ",Font.BOLD,20));
 		/* crossButton.setForeground(Color.BLUE);
 		crossButton.setBackground(Color.WHITE); */
 		choosePanel.add(crossButton);
@@ -82,7 +82,7 @@ public class choose extends JFrame
 		
 		malangImage = new ImageIcon("button_icon/brain.png");
 		malangButton = new JButton("malang-malang-brain-game", malangImage);
-		malangButton.setFont(new Font ("ê³ ë”•",Font.BOLD,20));
+		malangButton.setFont(new Font ("°íµñ",Font.BOLD,20));
 		/* malangButton.setForeground(Color.BLUE);
 		malangButton.setBackground(Color.white); */
 		choosePanel.add(malangButton);
@@ -97,7 +97,7 @@ public class choose extends JFrame
 		
 		matchingImage = new ImageIcon("button_icon/matching_card.png");
 		matchingButton = new JButton("matching_card", matchingImage);
-		matchingButton.setFont(new Font ("ê³ ë”•",Font.BOLD,20));
+		matchingButton.setFont(new Font ("°íµñ",Font.BOLD,20));
 		/* matchingButton.setForeground(Color.BLUE);
 		matchingButton.setBackground(Color.white); */
 		choosePanel.add(matchingButton);
@@ -112,7 +112,7 @@ public class choose extends JFrame
 		
 		tetrisImage = new ImageIcon("button_icon/tetris.png");
 		tetrisButton = new JButton("tetris", tetrisImage);
-		tetrisButton.setFont(new Font ("ê³ ë”•",Font.BOLD,20));
+		tetrisButton.setFont(new Font ("°íµñ",Font.BOLD,20));
 		/* tetrisButton.setForeground(Color.BLUE);
 		tetrisButton.setBackground(Color.white); */
 		choosePanel.add(tetrisButton);
@@ -161,7 +161,7 @@ class malang extends JFrame implements ActionListener
 	public void displayWidgets() 
     {  
 		animalImage = new ImageIcon("malang_select/animalImage.png");
-		/* animalButton.setFont(new Font ("ê³ ë”•",Font.BOLD,20));
+		/* animalButton.setFont(new Font ("°íµñ",Font.BOLD,20));
 		animalButton.setForeground(Color.BLUE);
 		animalButton.setBackground(Color.white); */
 		animalButton = new JButton("", animalImage);
@@ -253,13 +253,13 @@ class number implements ActionListener
            
            number = new ImageIcon("malang_select/numberImage.png");
            rangeLabel = new JLabel(number, SwingConstants.CENTER);
-           /* rangeLabel.setFont(new Font("êµ´ë¦¼", Font.BOLD, 30));
+           /* rangeLabel.setFont(new Font("±¼¸²", Font.BOLD, 30));
            rangeLabel.setForeground(Color.GREEN); 
            rangeLabel.setBackground(Color.WHITE); */
            
            numberguess = new ImageIcon("malang_select/numberguess.png");
            guessLabel = new JLabel(numberguess, SwingConstants.CENTER);
-           /* guessLabel.setFont(new Font("êµ´ë¦¼", Font.CENTER_BASELINE, 20)); */
+           /* guessLabel.setFont(new Font("±¼¸²", Font.CENTER_BASELINE, 20)); */
            
            winLabel = new JLabel(" ", SwingConstants.CENTER);
            
@@ -286,7 +286,7 @@ class number implements ActionListener
            {
         	   success = new ImageIcon("malang_select/success.png");
                count ++;
-               // winLabel.setText("ì •ë‹µì…ë‹ˆë‹¤");
+               // winLabel.setText("Á¤´äÀÔ´Ï´Ù");
                winLabel.setIcon(success);
                winLabel.setBackground(java.awt.Color.white);
                
@@ -296,7 +296,7 @@ class number implements ActionListener
            else if ( guess < Answer)
            {
         	   upfail = new ImageIcon("malang_select/upfail.png");
-               // winLabel.setText("ë„ˆë¬´ ì‘ì€ ìˆ«ìì…ë‹ˆë‹¤");
+               // winLabel.setText("³Ê¹« ÀÛÀº ¼ıÀÚÀÔ´Ï´Ù");
         	   winLabel.setIcon(upfail);
                // winLabel.setFont(winLabel.getFont().deriveFont(20.0f));
                // winLabel.setForeground(Color.BLUE);
@@ -306,7 +306,7 @@ class number implements ActionListener
            else if ( guess > Answer)
            {
         	   downfail = new ImageIcon("malang_select/downfail.png");
-               //winLabel.setText("ë„ˆë¬´ í° ìˆ«ìì…ë‹ˆë‹¤");
+               //winLabel.setText("³Ê¹« Å« ¼ıÀÚÀÔ´Ï´Ù");
         	   winLabel.setIcon(downfail);
                winLabel.setFont(winLabel.getFont().deriveFont(20.0f));
                //winLabel.setForeground(Color.BLUE);
@@ -320,7 +320,7 @@ class number implements ActionListener
            if (count < 5 && count > 1) score = 40;
            if (count == 1) score = 50;
            
-           JOptionPane.showMessageDialog(null, count, "ì‹œë„ íšŸìˆ˜", JOptionPane.INFORMATION_MESSAGE);
+           JOptionPane.showMessageDialog(null, count, "½Ãµµ È½¼ö", JOptionPane.INFORMATION_MESSAGE);
 
        }
        
@@ -392,7 +392,7 @@ class animal implements ActionListener{
 	{
 		
 		legFrame = new JFrame();
-		legFrame.setTitle("ë™ë¬¼ ë‹¤ë¦¬ ê°œìˆ˜ ë§ì¶”ê¸°");
+		legFrame.setTitle("µ¿¹° ´Ù¸® °³¼ö ¸ÂÃß±â");
 
 		
 		legPanel = new JPanel();
@@ -411,11 +411,11 @@ class animal implements ActionListener{
     {
     	animal = new ImageIcon("malang_select/animalImage.png");
     	titleLabel = new JLabel(animal, SwingConstants.CENTER);
-	    /* titleLabel.setFont(new Font("êµ´ë¦¼", Font.BOLD, 30));*/
+	    /* titleLabel.setFont(new Font("±¼¸²", Font.BOLD, 30));*/
 			
 	    animalguess = new ImageIcon("malang_select/animalguess.png");
 	    guessLabel = new JLabel(animalguess, SwingConstants.CENTER);
-	    /* guessLabel.setFont(new Font("êµ´ë¦¼", Font.CENTER_BASELINE, 20)); */
+	    /* guessLabel.setFont(new Font("±¼¸²", Font.CENTER_BASELINE, 20)); */
 	     
 	    textLabel = new JLabel(" ", SwingConstants.CENTER);
 	    
@@ -455,14 +455,14 @@ class animal implements ActionListener{
         if (guess == answer)
         {
             score++;
-            JOptionPane.showMessageDialog(null, "ì •ë‹µì…ë‹ˆë‹¤", "", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Á¤´äÀÔ´Ï´Ù", "", JOptionPane.INFORMATION_MESSAGE);
             scoreButton.setEnabled(true);
         }
         
         else
         {
         	score--;
-        	JOptionPane.showMessageDialog(null, "ì˜¤ë‹µì…ë‹ˆë‹¤", "", JOptionPane.INFORMATION_MESSAGE);
+        	JOptionPane.showMessageDialog(null, "¿À´äÀÔ´Ï´Ù", "", JOptionPane.INFORMATION_MESSAGE);
         	scoreButton.setEnabled(false);
         }
 	}
@@ -471,7 +471,7 @@ class animal implements ActionListener{
         @Override
         public void mouseClicked(MouseEvent e) {
      	   if (e.getSource() == scoreButton)
-     		   scoreButton.setText("ì ìˆ˜ëŠ” " + score);
+     		   scoreButton.setText("Á¡¼ö´Â " + score);
 			}
 
         @Override
@@ -513,7 +513,7 @@ class small extends JFrame{
     static long beforeTime = System.currentTimeMillis();
     JLabel[] la=new JLabel[20];
     small(){
-        this.setTitle("ì‘ì€ ìˆ«ì ë¹ ë¥´ê²Œ í´ë¦­í•˜ê¸°");
+        this.setTitle("ÀÛÀº ¼ıÀÚ ºü¸£°Ô Å¬¸¯ÇÏ±â");
 
         this.setLayout(null);
         for(int i=0; i<20; i++){
@@ -548,7 +548,7 @@ class small extends JFrame{
             
             if (c > 19) {
             	afterTime = System.currentTimeMillis();
-            	JOptionPane.showMessageDialog(null, "ì„±ê³µí•˜ì…¨ìŠµë‹ˆë‹¤", "ì„±ê³µ", JOptionPane.INFORMATION_MESSAGE);
+            	JOptionPane.showMessageDialog(null, "¼º°øÇÏ¼Ì½À´Ï´Ù", "¼º°ø", JOptionPane.INFORMATION_MESSAGE);
             	
             }
             
@@ -562,8 +562,8 @@ class small extends JFrame{
             	if (secDiffTime < 30 && secDiffTime > 20) score = 40;
             	if (secDiffTime < 20) score = 50;
 
-            	JOptionPane.showMessageDialog(null, secDiffTime, "ê±¸ë¦° ì‹œê°„", JOptionPane.INFORMATION_MESSAGE);
-            	JOptionPane.showMessageDialog(null, score, "ì ìˆ˜", JOptionPane.INFORMATION_MESSAGE);
+            	JOptionPane.showMessageDialog(null, secDiffTime, "°É¸° ½Ã°£", JOptionPane.INFORMATION_MESSAGE);
+            	JOptionPane.showMessageDialog(null, score, "Á¡¼ö", JOptionPane.INFORMATION_MESSAGE);
 
             }
             
@@ -606,13 +606,13 @@ class tetris extends JFrame {
 	   
 	   boolean limit = false;
 	   
-	   int curX[]= new int[4], curY[] = new int [4]; // ë¸”ë¡ë“¤ì˜ ì¢Œí‘œ ì €ì¥
+	   int curX[]= new int[4], curY[] = new int [4]; // ºí·ÏµéÀÇ ÁÂÇ¥ ÀúÀå
 	   
 	   int blocks[][][][]  = 
 	      {
 	         {
-	            //â– 
-	            //â– â– â– 
+	            //¡á
+	            //¡á¡á¡á
 	            {
 	               {0,0,0,0},
 	               {1,0,0,0},
@@ -639,8 +639,8 @@ class tetris extends JFrame {
 	            }
 	         },
 	         {
-	               //  â– 
-	               //â– â– â– 
+	               //  ¡á
+	               //¡á¡á¡á
 	            {
 	               {0,0,0,0},
 	               {0,0,1,0},
@@ -667,8 +667,8 @@ class tetris extends JFrame {
 	            }
 	         },
 	         {
-	               //  â– â– 
-	               //  â– â– 
+	               //  ¡á¡á
+	               //  ¡á¡á
 	            {
 	               {0,0,0,0},
 	               {1,1,0,0},
@@ -695,7 +695,7 @@ class tetris extends JFrame {
 	            }
 	         },
 	         {
-	               // â– â– â– â– 
+	               // ¡á¡á¡á¡á
 	            {
 	               {0,0,0,0},
 	               {0,0,0,0},
@@ -722,8 +722,8 @@ class tetris extends JFrame {
 	            }
 	         },
 	         {
-	                //â– 
-	               //â– â– â– 
+	                //¡á
+	               //¡á¡á¡á
 	            {
 	               {0,0,0,0},
 	               {0,1,0,0},
@@ -750,8 +750,8 @@ class tetris extends JFrame {
 	            }   
 	         },
 	         {
-	                //  â– â– 
-	                //   â– â– 
+	                //  ¡á¡á
+	                //   ¡á¡á
 	            {
 	               {0,0,0,0},
 	               {1,1,0,0},
@@ -778,8 +778,8 @@ class tetris extends JFrame {
 	            }
 	         },
 	         {
-	                //  â– â– 
-	               //  â– â– 
+	                //  ¡á¡á
+	               //  ¡á¡á
 	            {
 	               {0,0,0,0},
 	               {0,1,1,0},
@@ -829,12 +829,12 @@ class tetris extends JFrame {
 	                     {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	                     {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}};
 
-	   JButton btn = new JButton("ì¬ë„ì „");
+	   JButton btn = new JButton("ÀçµµÀü");
 	   JLabel lbl = new JLabel();
 	   JLabel lbl2 = new JLabel();
 	      
 	   tetris(){
-	      setTitle("í…ŒíŠ¸ë¦¬ìŠ¤");
+	      setTitle("Å×Æ®¸®½º");
 	      setLayout(null);
 	      TP.setSize(720,600);
 	      
@@ -843,15 +843,15 @@ class tetris extends JFrame {
 	      th = new TetrisThread();
 	      
 	      // JDialog 
-	      JD.setTitle("ì ìˆ˜");
+	      JD.setTitle("Á¡¼ö");
 	      JD.setSize(250,190);
 	      JD.setLayout(new FlowLayout(FlowLayout.CENTER, 150, 30));
 	      
 	      
 	      
 	      lbl.setFont(new Font("arial",Font.PLAIN,15));
-	      lbl2.setText("ì   ìˆ˜");
-	      lbl2.setFont(new Font("ë‚˜ëˆ”ê³ ë”•",Font.PLAIN,15));
+	      lbl2.setText("Á¡  ¼ö");
+	      lbl2.setFont(new Font("³ª´®°íµñ",Font.PLAIN,15));
 	      
 	      
 	      TP.addKeyListener(new KeyAdapter(){
@@ -885,7 +885,7 @@ class tetris extends JFrame {
 	      setVisible(true);
 
 
-	      // í™”ë©´ ì¤‘ì•™ ì •ë ¬
+	      // È­¸é Áß¾Ó Á¤·Ä
 	      Dimension frameSize = this.getSize();
 	      Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 	      setLocation((screenSize.width - frameSize.width)/2, (screenSize.height - frameSize.height)/2);
@@ -913,24 +913,24 @@ class tetris extends JFrame {
 	         TP.add(lbl);
 	         lbl.setText(Integer.toString(score*100));
 	         
-	         g.setColor(Color.ORANGE); // ìƒˆë¡œ ë–¨ì–´ì§€ëŠ” ë¸”ëŸ­,ë¯¸ë¦¬ë³´ê¸°  ë¸”ëŸ­ ìƒ‰ê¹”
+	         g.setColor(Color.ORANGE); // »õ·Î ¶³¾îÁö´Â ºí·°,¹Ì¸®º¸±â  ºí·° »ö±ò
 	         
-	         // ë‹¤ìŒ ë‚˜ì˜¬ ë„í˜• ì¶œë ¥
+	         // ´ÙÀ½ ³ª¿Ã µµÇü Ãâ·Â
 	         blockLookAhead(g);
 	         
-	         // ë²½ì´ ì²œì¥ì— ë‹¿ìœ¼ë©´ ê²Œì„ ì˜¤ë²„
+	         // º®ÀÌ ÃµÀå¿¡ ´êÀ¸¸é °ÔÀÓ ¿À¹ö
 	         gameOverCheck();
 	                
-	         // í•œ í–‰ì´ ëª¨ë‘ ë¸”ë¡ìœ¼ë¡œ ì±„ì›Œì§„ ê²½ìš° ë¸”ë¡ë“¤ ì œê±°(ì±„ì›Œì§€ì§€ì•Šì€ ê²½ìš° ë¸”ë¡ ë–¨ì–´ì§€ë„ë¡)
+	         // ÇÑ ÇàÀÌ ¸ğµÎ ºí·ÏÀ¸·Î Ã¤¿öÁø °æ¿ì ºí·Ïµé Á¦°Å(Ã¤¿öÁöÁö¾ÊÀº °æ¿ì ºí·Ï ¶³¾îÁöµµ·Ï)
 	         removeBlock(cnt, cnt2, g);
 	         
-	         // ë¸”ë¡ì´ ë²½ì— ì°©ì§€í•˜ë©´ ë¸”ë¡->ë²½ìœ¼ë¡œ ë³€í™˜(ë–¨ì–´ì§€ëŠ” ë¸”ë¡ ì´ˆê¸°í™”)
+	         // ºí·ÏÀÌ º®¿¡ ÂøÁöÇÏ¸é ºí·Ï->º®À¸·Î º¯È¯(¶³¾îÁö´Â ºí·Ï ÃÊ±âÈ­)
 	         blockToWall();
 	         
-	         // ë²½ë“¤ì„ ìƒì„±
+	         // º®µéÀ» »ı¼º
 	         makeBlock(g);
 	         
-	         // í…Œë‘ë¦¬ ìƒì„±
+	         // Å×µÎ¸® »ı¼º
 	         makeBorder(g);
 	       
 	       
@@ -980,7 +980,7 @@ class tetris extends JFrame {
 	                   }
 	               score++;
 	             }else{
-	                blockDown(cnt,g); // í•œ í–‰ì´ ëª¨ë‘ ë¸”ë¡ìœ¼ë¡œ ì±„ì›Œì§€ì§€ ì•Šì„ ë•Œë§Œ ë¸”ë¡ì´ ë‚´ë ¤ê°€ë„ë¡ í•¨
+	                blockDown(cnt,g); // ÇÑ ÇàÀÌ ¸ğµÎ ºí·ÏÀ¸·Î Ã¤¿öÁöÁö ¾ÊÀ» ¶§¸¸ ºí·ÏÀÌ ³»·Á°¡µµ·Ï ÇÔ
 	             }
 	             cnt2 = 0 ;
 	          }
@@ -1001,7 +1001,7 @@ class tetris extends JFrame {
 	         for(int j = 0; j<4 ;j++){
 	              for(int k = 0; k<4;k++){
 	                 if(blocks[random][rotation][j][k] == 1){
-	                    curX[cnt] = ((k*blocksize)+wid)/blocksize; curY[cnt] = ((j*blocksize)+hgt)/blocksize;//curX,Y[0][1][2][3]ì— ì¢Œí‘œ 4ê°œ ì €ì¥
+	                    curX[cnt] = ((k*blocksize)+wid)/blocksize; curY[cnt] = ((j*blocksize)+hgt)/blocksize;//curX,Y[0][1][2][3]¿¡ ÁÂÇ¥ 4°³ ÀúÀå
 	                    g.fill3DRect(curX[cnt]*blocksize+20, curY[cnt]*blocksize+60, blocksize, blocksize, true);
 	                    
 	                    cnt ++;
@@ -1010,8 +1010,8 @@ class tetris extends JFrame {
 	           }
 	      }
 	      
-	      // ë–¨ì–´ì§€ë˜ ë¸”ë¡ì´ ë²½ì´ ë˜ëŠ”ì§€ ê²€ì‚¬
-	      // ë²½ì´ ë˜ë©´ wid=120, hgt=0 ìœ¼ë¡œ ë¸”ë¡ ì´ˆê¸°í™”, rotationë„ ì´ˆê¸°í™” 
+	      // ¶³¾îÁö´ø ºí·ÏÀÌ º®ÀÌ µÇ´ÂÁö °Ë»ç
+	      // º®ÀÌ µÇ¸é wid=120, hgt=0 À¸·Î ºí·Ï ÃÊ±âÈ­, rotationµµ ÃÊ±âÈ­ 
 	      public void blockToWall(){
 	         try{
 	         for(int z = 0; z<4 ; z++)
@@ -1033,28 +1033,28 @@ class tetris extends JFrame {
 	         
 	      }
 	      
-	      // ì™¼ìª½ ë²½ì— ì¶©ëŒí•˜ë©´ ëª»ì›€ì§ì´ë„ë¡
+	      // ¿ŞÂÊ º®¿¡ Ãæµ¹ÇÏ¸é ¸ø¿òÁ÷ÀÌµµ·Ï
 	      public int collision_LEFT(){
 	         for(int i=0; i<4; i++){
-	            if(gameboard[curY[i]][curX[i]-1] == 1)  // ì¶©ëŒì‹œ 1 ë°˜í™˜
+	            if(gameboard[curY[i]][curX[i]-1] == 1)  // Ãæµ¹½Ã 1 ¹İÈ¯
 	               return 1;
 	         }
-	         return 0; // ì¶©ëŒí•˜ì§€ ì•Šìœ¼ë©´ 0 ë°˜í™˜
+	         return 0; // Ãæµ¹ÇÏÁö ¾ÊÀ¸¸é 0 ¹İÈ¯
 	      }
 	      
-	      // ì˜¤ë¥¸ìª½ ë²½ì— ì¶©ëŒí•˜ë©´ ëª» ì›€ì§ì´ë„ë¡
+	      // ¿À¸¥ÂÊ º®¿¡ Ãæµ¹ÇÏ¸é ¸ø ¿òÁ÷ÀÌµµ·Ï
 	      public int collision_RIGHT(){
 
 	         for(int i=0; i<4; i++){
-	            if(gameboard[curY[i]][curX[i]+1] == 1)   // ì¶©ëŒì‹œ 1ë°˜í™˜
+	            if(gameboard[curY[i]][curX[i]+1] == 1)   // Ãæµ¹½Ã 1¹İÈ¯
 	               return 1;
 	         }
-	         return 0; // ì¶©ëŒí•˜ì§€ ì•Šìœ¼ë©´ 0ë°˜í™˜
+	         return 0; // Ãæµ¹ÇÏÁö ¾ÊÀ¸¸é 0¹İÈ¯
 	      }
 	      
-	      // curX,Yì— ë‹¤ìŒ íšŒì „ ë„í˜•ì˜ ì ˆëŒ€ì¢Œí‘œë¥¼ ëª¨ë‘ ê¸°ë¡í•´ë‘ê³ , ë§Œì•½ ì˜¤ë¥¸ìª½ì´ë‚˜ ì™¼ìª½ Xì¢Œí‘œ1,2ì¹¸ ì•ˆì— ë²½ì´ ìˆìœ¼ë©´ ê·¸ë§Œí¼ ì˜¤ë¥¸ìª½ í˜¹ì€ ì™¼ìª½ìœ¼ë¡œ ë°€ì–´ì„œ ë°°ì¹˜
+	      // curX,Y¿¡ ´ÙÀ½ È¸Àü µµÇüÀÇ Àı´ëÁÂÇ¥¸¦ ¸ğµÎ ±â·ÏÇØµÎ°í, ¸¸¾à ¿À¸¥ÂÊÀÌ³ª ¿ŞÂÊ XÁÂÇ¥1,2Ä­ ¾È¿¡ º®ÀÌ ÀÖÀ¸¸é ±×¸¸Å­ ¿À¸¥ÂÊ È¤Àº ¿ŞÂÊÀ¸·Î ¹Ğ¾î¼­ ¹èÄ¡
 	      public void rotationCheck(){
-	       // curX,Yì— ë‹¤ìŒ íšŒì „ ë„í˜•ì˜ ì ˆëŒ€ì¢Œí‘œë¥¼ ëª¨ë‘ ê¸°ë¡í•´ë‘ê³ , ë°‘ì— êµ¬ë¬¸ì—ì„œ ê·¸ ì ˆëŒ€ì¢Œí‘œì˜ ê°’ì´ ë²½ì— ë‹¿ëŠ”ì§€ íŒë‹¨
+	       // curX,Y¿¡ ´ÙÀ½ È¸Àü µµÇüÀÇ Àı´ëÁÂÇ¥¸¦ ¸ğµÎ ±â·ÏÇØµÎ°í, ¹Ø¿¡ ±¸¹®¿¡¼­ ±× Àı´ëÁÂÇ¥ÀÇ °ªÀÌ º®¿¡ ´ê´ÂÁö ÆÇ´Ü
 	         int cnt2=0;
 	          for(int j = 0; j<4 ;j++){
 	              for(int k = 0; k<4;k++){
@@ -1068,18 +1068,18 @@ class tetris extends JFrame {
 	              }
 	          }
 	          
-	       // curX,Yì— ì €ì¥ëœ ì¢Œí‘œë¥¼ ì´ìš©
+	       // curX,Y¿¡ ÀúÀåµÈ ÁÂÇ¥¸¦ ÀÌ¿ë
 	          int chk = 0;
 	          int blank =0;
 	          int error = 0;
-	           // ì™¼ìª½ ë²½
+	           // ¿ŞÂÊ º®
 	             
 	                
 	                      if(gameboard[curY[0]][curX[0]] == 1 || (random == 6 && gameboard[curY[2]][curX[2]] == 1) || (random == 1 && gameboard[curY[1]][curX[1]] ==1 )){
-	                         chk = 1; // ë§Œì•½ ë‹¤ìŒ íšŒì „í•œ ë„í˜•ì˜ ìœ„ì¹˜ê°€ ë²½ê³¼ ê²¹ì¹œë‹¤ë©´ chk=1ë¡œ í‘œì‹œí•¨           
+	                         chk = 1; // ¸¸¾à ´ÙÀ½ È¸ÀüÇÑ µµÇüÀÇ À§Ä¡°¡ º®°ú °ãÄ£´Ù¸é chk=1·Î Ç¥½ÃÇÔ           
 	                         error++;
 	                         System.out.println("chk1");
-	                         if(random == 3){ // ì¼ìë§‰ëŒ€ì˜ ê²½ìš° íšŒì „í•  ì—¬ìœ ê°€ ìˆëŠ” ê³µë°±ì´ ì—†ìœ¼ë©´ íšŒì „ë§‰ìŒ
+	                         if(random == 3){ // ÀÏÀÚ¸·´ëÀÇ °æ¿ì È¸ÀüÇÒ ¿©À¯°¡ ÀÖ´Â °ø¹éÀÌ ¾øÀ¸¸é È¸Àü¸·À½
 	                            for(int i=1;i<5;i++)
 	                               if(gameboard[curY[0]][curX[0]+i] == 0)
 	                                  blank++;
@@ -1087,7 +1087,7 @@ class tetris extends JFrame {
 	                               chk = 4;
 	                            
 	                              System.out.println(blank);
-	                         }else{ // ê·¸ ì™¸ì˜ ê²½ìš° íšŒì „í•  ì—¬ìœ ê°€ ì—†ëŠ” ê³µë°±ì´ ì—†ìœ¼ë©´ íšŒì „ ë§‰ìŒ
+	                         }else{ // ±× ¿ÜÀÇ °æ¿ì È¸ÀüÇÒ ¿©À¯°¡ ¾ø´Â °ø¹éÀÌ ¾øÀ¸¸é È¸Àü ¸·À½
 	                            for(int i=1; i<4;i++)
 	                               if(gameboard[curY[0]][curX[0]+i] == 0)
 	                                  blank++;
@@ -1099,12 +1099,12 @@ class tetris extends JFrame {
 	                         
 	                      }
 	            
-	          //ì˜¤ë¥¸ìª½ ë²½
+	          //¿À¸¥ÂÊ º®
 	             
 	                 
 	                      else if(gameboard[curY[2]][curX[2]] == 1){
 	                        error++;
-	                       chk = 2; // ë§Œì•½ ë‹¤ìŒ íšŒì „í•œ ë„í˜•ì˜ ìœ„ì¹˜ê°€ ë²½ê³¼ ê²¹ì¹œë‹¤ë©´ chk=2ë¡œ í‘œì‹œí•¨  
+	                       chk = 2; // ¸¸¾à ´ÙÀ½ È¸ÀüÇÑ µµÇüÀÇ À§Ä¡°¡ º®°ú °ãÄ£´Ù¸é chk=2·Î Ç¥½ÃÇÔ  
 	                       System.out.println("chk2");
 	                       
 	                       for(int i=1; i<5;i++)
@@ -1119,7 +1119,7 @@ class tetris extends JFrame {
 	                    }
 	                      else if(gameboard[curY[3]][curX[3]] == 1){
 	                       error++;
-	                       chk = 3; // ë§Œì•½ ë‹¤ìŒ íšŒì „í•œ ë„í˜•ì˜ ìœ„ì¹˜ê°€ ë²½ê³¼ ê²¹ì¹œë‹¤ë©´ chk=3ë¡œ í‘œì‹œí•¨    
+	                       chk = 3; // ¸¸¾à ´ÙÀ½ È¸ÀüÇÑ µµÇüÀÇ À§Ä¡°¡ º®°ú °ãÄ£´Ù¸é chk=3·Î Ç¥½ÃÇÔ    
 	                       System.out.println("chk3");
 	                       for(int i=0; i<5;i++)
 	                          if(gameboard[curY[3]][curX[3]-i] == 0)
@@ -1133,7 +1133,7 @@ class tetris extends JFrame {
 	             
 	          
 	          
-	          if(chk == 1){ // chk = 1(ë‹¤ìŒ íšŒì „í•œ ë„í˜•ì˜ ìœ„ì¹˜ê°€ ë²½ê³¼ ì¤‘ë³µë˜ë©´)ë©´ wid(ê°€ë¡œ)ë¡œ 30ì´ë™
+	          if(chk == 1){ // chk = 1(´ÙÀ½ È¸ÀüÇÑ µµÇüÀÇ À§Ä¡°¡ º®°ú Áßº¹µÇ¸é)¸é wid(°¡·Î)·Î 30ÀÌµ¿
 	             wid += blocksize;
 	             rotation++;
 	             rotation = rotation%4;
@@ -1158,10 +1158,10 @@ class tetris extends JFrame {
 	      public void makeBorder(Graphics g){
 	         g.setColor(Color.GRAY);
 	         
-	         g.draw3DRect(28, 70, 5, 375,true); // ê¸°ë‘¥
-	         g.draw3DRect(265, 70, 5, 375, true); // ê¸°ë‘¥
-	         g.draw3DRect(15, 445, 270, 5,true); // ë°”ë‹¥
-	         g.draw3DRect(15, 65, 270, 5, true); // ì²œì¥
+	         g.draw3DRect(28, 70, 5, 375,true); // ±âµÕ
+	         g.draw3DRect(265, 70, 5, 375, true); // ±âµÕ
+	         g.draw3DRect(15, 445, 270, 5,true); // ¹Ù´Ú
+	         g.draw3DRect(15, 65, 270, 5, true); // ÃµÀå
 	      }
 	      
 	      void down(){
@@ -1180,14 +1180,14 @@ class tetris extends JFrame {
 	         }
 	      }
 	      void moveLeft(){
-	         int sel = collision_LEFT();// selì´ 1ì´ë©´ ì¶©ëŒ, 0ì´ë©´ ì¶©ëŒX
+	         int sel = collision_LEFT();// selÀÌ 1ÀÌ¸é Ãæµ¹, 0ÀÌ¸é Ãæµ¹X
 	         if(sel == 0 && limit == false){
 	            wid -= blocksize;
 	               TP.repaint();
 	         }
 	      }
 	      void moveRight(){
-	         int sel = collision_RIGHT();// selì´ 1ì´ë©´ ì¶©ëŒ, 0ì´ë©´ ì¶©ëŒX
+	         int sel = collision_RIGHT();// selÀÌ 1ÀÌ¸é Ãæµ¹, 0ÀÌ¸é Ãæµ¹X
 	         if(sel == 0 && limit == false){ 
 	            wid += blocksize;
 	            TP.repaint();
@@ -1201,7 +1201,7 @@ class tetris extends JFrame {
 	         while(true){
 	            try{
 	               sleep(500);
-	               if(limit == false) // limitì´ falseì¼ ê²½ìš°ì—ë§Œ ì‘ë™. trueê°€ ë˜ë©´ í…ŒíŠ¸ë¦¬ìŠ¤ ì‘ë™ì¤‘ì§€
+	               if(limit == false) // limitÀÌ falseÀÏ °æ¿ì¿¡¸¸ ÀÛµ¿. true°¡ µÇ¸é Å×Æ®¸®½º ÀÛµ¿ÁßÁö
 	                  TP.down();
 	            }catch(InterruptedException e){
 	               return;
